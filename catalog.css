@@ -1,0 +1,220 @@
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Limit the width of the container */
+}
+
+.catalog-card{
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;    }
+.catalog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}   
+.catalog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.catalog-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.catalog-card p {
+    font-size: 1em;
+    color: #555;
+}
+.catalog-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.catalog-card button:hover {
+    background-color: #0056b3;
+}
+.catalog-card .price {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.catalog-card .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+.catalog-card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.catalog-card .rating span {
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #888;
+}
+.catalog-card .rating i {
+    color: #f39c12;
+}
+.catalog-card .rating i.far {
+    color: #ccc;
+}
+.catalog-card .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.catalog-card .actions button {
+    flex: 1;
+    margin: 0 5px;
+}
+.catalog-card .actions button:first-child {
+    background-color: #28a745;
+}
+.catalog-card .actions button:first-child:hover {
+    background-color: #218838;
+}
+.catalog-card .actions button:last-child {
+    background-color: #dc3545;
+}
+.catalog-card .actions button:last-child:hover {
+    background-color: #c82333;
+}
+.catalog-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.catalog-card .tags span {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 0.8em;
+}
+.catalog-card .tags span:hover {
+    background-color: #ced4da;
+}
+.catalog-card .availability {
+    font-size: 0.9em;
+    color: #28a745;
+    margin-top: 10px;
+}
+.catalog-card .availability.out-of-stock {
+    color: #dc3545;
+}
+.catalog-card .availability.in-stock {
+    color: #28a745;
+}
+.catalog-card .availability.low-stock {
+    color: #ffc107;
+}
+
+
+.catalog-card .discount {
+    font-size: 0.9em;
+    color: #dc3545;
+    margin-top: 5px;
+    text-decoration: line-through;
+}
+.catalog-card .new-arrival {
+    font-size: 0.9em;
+    color: #17a2b8;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.catalog-card .featured {
+    font-size: 0.9em;
+    color: #ffc107;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.catalog-card .wishlist {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.catalog-card .wishlist i {
+    color: #ff4757;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.catalog-card .wishlist i:hover {
+    color: #e84118;
+}
+.catalog-card .wishlist i.far {
+    color: #ccc;
+}
+.catalog-card .wishlist i.fas {
+    color: #ff4757;
+}
+
+.catalog-card .wishlist span {
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.catalog-card .wishlist span:hover {
+    color: #555;
+}
+
+.catalog-card .wishlist span.far {
+    color: #ccc;
+}
+
+.catalog-card .wishlist span.fas {
+    color: #ff4757;
+}
+
+
+.catalog-card .wishlist span.far:hover {
+    color: #e84118;
+}
+
+
+
+.catalog-card .wishlist span.fas:hover {
+    color: #e84118;
+}
+
+
+.catalog-card .wishlist span.far {
+    color: #ccc;
+}
+
+
+.catalog-card .wishlist span.fas {
+    color: #ff4757;
+}
+
+.catalog-card .wishlist span.far:hover {
+    color: #e84118;
+}
+
+/* hacemos que las cards quede en el  centro */
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
